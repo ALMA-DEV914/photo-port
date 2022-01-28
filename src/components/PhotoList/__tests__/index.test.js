@@ -1,4 +1,4 @@
-/* eslint-disable jest/no-identical-title */
+
 // __tests__/PhotoList.test.js
 import React from 'react'
 import { render, cleanup } from '@testing-library/react'
@@ -13,6 +13,7 @@ describe('PhotoList is rendering', () => {
   });
 
 
+  // eslint-disable-next-line jest/no-identical-title
   it('renders', () => {
     const { asFragment } = render(<PhotoList />)
     expect(asFragment()).toMatchSnapshot()
