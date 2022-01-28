@@ -2,6 +2,7 @@ import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
+
   const  categories = [
     { name: 'commercial', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
     { name: 'portraits', description: 'Portraits of people in my life' },
@@ -12,7 +13,7 @@ function Nav() {
   const handleClick = (item) => {
     console.log(item);
     return item;
-  }
+  };
 
   return (
     <header className="flex-row px-1">
@@ -29,15 +30,15 @@ function Nav() {
             </a>
           </li>
           <li className={"mx-2"}>
-            <span onClick={() => handleClick("Contact")}>
+            <span onClick={() => handleClick('Contact')}>
               Contact
             </span>
           </li>
           {
             categories.map((category) => (
               <li className="mx-1" key={category.name} >
-                <span onClick={() => { handleClick(); }}>
-                {capitalizeFirstLetter(category.name)}
+                <span onClick={() => { handleClick(category.name); }}>
+                 {capitalizeFirstLetter(category.name)}
                 </span>
               </li>
             ))
