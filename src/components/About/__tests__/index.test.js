@@ -8,9 +8,10 @@ afterEach(cleanup);
 describe('About component', () =>{
     it('renders', () => {
         render(<About />);
-    })
+    });
+    
     it('matches snapshot DOM node structrure', () => {
-        const {asFragment} = render(<About />);
+        const { asFragment } = render(<About />);
         expect(asFragment()).toMatchSnapshot();
     });
 });
