@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+[The deployed application through gh-pages] (https://alma-dev914.github.io/photo-port/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
